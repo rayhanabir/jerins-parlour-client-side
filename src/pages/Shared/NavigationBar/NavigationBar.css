@@ -1,0 +1,16 @@
+ul{
+    display: flex;
+    align-items: center;
+   
+}
+ul li{
+    list-style: none;
+    margin-right: 10px;
+}
+ul li a{
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 500;
+    color: black;
+
+}

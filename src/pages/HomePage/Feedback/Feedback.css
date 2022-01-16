@@ -1,0 +1,26 @@
+#feedback_title{
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 10;
+}
+.feedback_area{
+    background-color:#F0E6D7;
+    padding: 20px;
+}
+.feedback_content{
+    
+    display: flex;
+    justify-content: center;
+}
+.input_field{
+    width: 50%;
+    
+}
+.input_field input, textarea{
+    width: 100%;
+    padding: 8px;
+    border: none;
+    display: block;
+    margin-bottom: 10px;
+}

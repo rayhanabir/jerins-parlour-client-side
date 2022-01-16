@@ -1,0 +1,21 @@
+.register_area{
+    width: 100%;
+    height: 100vh;
+    background-color: #F7F4EF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.register_input_field{
+    width: 50%;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 5px 5px 10px 5px rgb(218, 213, 213);
+}
+.register_input_field input{
+    width: 100%;
+    display: block;
+    margin-bottom: 7px;
+    padding: 5px;
+    
+}
