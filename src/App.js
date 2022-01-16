@@ -9,8 +9,8 @@ import {
 import Login from './pages/Login/Login/Login';
 import Register from './pages/Login/Register/Register';
 import AuthProvider from './context/AuthProvider';
-import Sidebar from './pages/Dashboard/Sidebar/Sidebar';
 import DashboardHome from './pages/Dashboard/DashboardHome/DashboardHome';
+import Book from './pages/Others/Book/Book';
 
 
 function App() {
@@ -25,8 +25,8 @@ function App() {
           <Route  path="/home">
            <Home></Home>
           </Route>
-          <Route  path="/book/:bookingId">
-           
+          <Route path="/book/:bookingId">
+           <Book></Book>
           </Route>
           <Route path="/login">
            <Login></Login>
