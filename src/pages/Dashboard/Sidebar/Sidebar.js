@@ -1,11 +1,14 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./Sidebar.css";
+import { Link } from "react-router-dom";
+import { useRouteMatch } from "react-router-dom";
 
 const Sidebar = () => {
+  let { path, url } = useRouteMatch();
   return (
+    <>
     <div
-      className="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark manik"
+      className="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark sidebar"
       style={{ width: "280px" }}
     >
       <a
@@ -28,7 +31,7 @@ const Sidebar = () => {
           </Link>
         </li>
         <li>
-          <Link to="orderList" className="nav-link text-white">
+          <Link to={`${url}/orderList`} className="nav-link text-white">
             <svg className="bi me-2" width={16} height={16}>
               <use xlinkHref="#speedometer2" />
             </svg>
@@ -36,7 +39,7 @@ const Sidebar = () => {
           </Link>
         </li>
         <li>
-          <Link to="makeAdmin" className="nav-link text-white">
+          <Link to={`${url}/makeAdmin`} className="nav-link text-white">
             <svg className="bi me-2" width={16} height={16}>
               <use xlinkHref="#table" />
             </svg>
@@ -44,7 +47,7 @@ const Sidebar = () => {
           </Link>
         </li>
         <li>
-          <Link to="addService" className="nav-link text-white">
+          <Link to={`${url}/addService`} className="nav-link text-white">
             <svg className="bi me-2" width={16} height={16}>
               <use xlinkHref="#grid" />
             </svg>
@@ -52,7 +55,7 @@ const Sidebar = () => {
           </Link>
         </li>
         <li>
-          <Link to="book" className="nav-link text-white">
+          <Link to={`${url}/book`} className="nav-link text-white">
             <svg className="bi me-2" width={16} height={16}>
               <use xlinkHref="#people-circle" />
             </svg>
@@ -60,7 +63,7 @@ const Sidebar = () => {
           </Link>
         </li>
         <li>
-          <Link to="bookingList" className="nav-link text-white">
+          <Link to={`${url}/bookingList`} className="nav-link text-white">
             <svg className="bi me-2" width={16} height={16}>
               <use xlinkHref="#people-circle" />
             </svg>
@@ -68,7 +71,7 @@ const Sidebar = () => {
           </Link>
         </li>
         <li>
-          <Link to="review" className="nav-link text-white">
+          <Link to={`${url}/review`} className="nav-link text-white">
             <svg className="bi me-2" width={16} height={16}>
               <use xlinkHref="#people-circle" />
             </svg>
@@ -77,6 +80,9 @@ const Sidebar = () => {
         </li>
       </ul>     
     </div>
+    
+    
+    </>
   );
 };
 

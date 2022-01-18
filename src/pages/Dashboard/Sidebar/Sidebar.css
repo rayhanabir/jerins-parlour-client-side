@@ -16,8 +16,10 @@ body {
     overflow-x: auto;
     overflow-y: hidden;
   }
-  .manik{
+  .sidebar{
     height: 100vh;
+    position: fixed;
+    left: 0;
   }
   
   /* .b-example-divider {

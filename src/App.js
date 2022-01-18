@@ -9,8 +9,9 @@ import {
 import Login from './pages/Login/Login/Login';
 import Register from './pages/Login/Register/Register';
 import AuthProvider from './context/AuthProvider';
-import DashboardHome from './pages/Dashboard/DashboardHome/DashboardHome';
 import Book from './pages/Others/Book/Book';
+import Dashboard from './pages/Dashboard/Dashboard/Dashboard';
+import Review from './pages/Dashboard/Review/Review';
 
 
 function App() {
@@ -34,8 +35,9 @@ function App() {
           <Route path="/register">
             <Register></Register>
           </Route>
+          
           <Route path="/dashboard">
-            <DashboardHome></DashboardHome>
+            <Dashboard></Dashboard>
           </Route>
       </Switch>
      </Router>

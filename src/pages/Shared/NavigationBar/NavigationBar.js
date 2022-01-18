@@ -28,6 +28,7 @@ const NavigationBar = () => {
                 <li><Link to='/appointment'>Appointment</Link></li>
                 <li><Link to='/login'>Login</Link></li>
                 <li><Link to='/dashboard'>Dashboard</Link></li>
+                <li><Link to='/review'>review</Link></li>
                
               </ul>
               
