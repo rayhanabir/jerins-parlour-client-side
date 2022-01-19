@@ -6,7 +6,7 @@ import './Book.css'
 import { Alert } from 'react-bootstrap';
 const Book = () => {
     const [service, setService] = useState({});
-    const [bookingSuccess, setBookingSuccess] = useState(false);
+    // const [bookingSuccess, setBookingSuccess] = useState(false);
     const {bookingId} = useParams();
     const {user} = useAuth();
     const { register, handleSubmit, reset } = useForm();
@@ -22,8 +22,8 @@ const Book = () => {
         .then(data =>{
             console.log(data)
             if(data.insertedId){
-                setBookingSuccess(true)
-                reset()
+              alert('order book suucessfully')  
+               
             }
         })
         console.log(data);
@@ -44,12 +44,10 @@ const Book = () => {
                 <form onSubmit={handleSubmit(onSubmit)}>
                     <input {...register("name", { required: true, maxLength: 20 })} value={user.displayName} placeholder='name'/>
                     <input {...register("email")} value={user.email} placeholder='email'/>
-                    <input {...register("service name")} value={service.name} placeholder='service name'/>                 
+                    <input {...register("serviceName")} value={service.name} placeholder='service name'/>                 
                     <input type="submit" />
                 </form>
-                <Alert variant='success' className='mt-3'>
-                    order Booked Successfully.
-                </Alert>
+                
             </div>
             </div>
         </div>

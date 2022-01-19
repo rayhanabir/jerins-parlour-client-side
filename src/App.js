@@ -35,7 +35,6 @@ function App() {
           <Route path="/register">
             <Register></Register>
           </Route>
-          
           <Route path="/dashboard">
             <Dashboard></Dashboard>
           </Route>

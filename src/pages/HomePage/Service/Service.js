@@ -9,7 +9,7 @@ const Service = (props) => {
     }
     return (
         <div>
-            <div className="service_card">
+            <div className="service_card shadow mb-2">
                 <h3>{name}</h3>
                 <h4 className='text-danger'>${price}</h4>
                 <p>{description}</p>

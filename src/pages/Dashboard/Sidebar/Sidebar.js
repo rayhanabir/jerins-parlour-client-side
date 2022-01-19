@@ -54,14 +54,7 @@ const Sidebar = () => {
             Add service
           </Link>
         </li>
-        <li>
-          <Link to={`${url}/book`} className="nav-link text-white">
-            <svg className="bi me-2" width={16} height={16}>
-              <use xlinkHref="#people-circle" />
-            </svg>
-            Book
-          </Link>
-        </li>
+        
         <li>
           <Link to={`${url}/bookingList`} className="nav-link text-white">
             <svg className="bi me-2" width={16} height={16}>

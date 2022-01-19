@@ -1,14 +1,14 @@
-#review_title{
+#add_service_title{
     font-weight: 500;
     text-transform: uppercase;
     text-align: center;
     margin: 0 10;
 }
-.review_area{
+.add_service_area{
     background-color:#141312;
     padding: 20px;
 }
-.review_content{
+.add_service_content{
     
     display: flex;
     justify-content: center;

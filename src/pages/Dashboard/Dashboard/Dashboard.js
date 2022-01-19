@@ -8,10 +8,10 @@ const Dashboard = () => {
     return (
         <>
            <Row>
-               <Col md={5}> 
+               <Col md={4}> 
                     <Sidebar></Sidebar>
                </Col>
-               <Col md={7}> 
+               <Col md={8} > 
                    <DashboardHome></DashboardHome>
                </Col>
            </Row>

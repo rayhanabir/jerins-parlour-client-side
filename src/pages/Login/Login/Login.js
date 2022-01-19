@@ -33,8 +33,8 @@ const Login = () => {
                 {!isLoading && <div className="login_input_field">
                     <h3 className='text-center'>Please Login</h3>
                    <form onSubmit={handleLogin}>    
-                        <input type="email" name='email' placeholder='Your Email'/>
-                        <input type="password" name='password' placeholder='Your Pasword'/>
+                        <input type="email" name='email' onBlur={handleOnBlur} placeholder='Your Email'/>
+                        <input type="password" name='password'onBlur={handleOnBlur} placeholder='Your Pasword'/>
                         <button type='submit' className='btn btn-danger m-auto d-block w-50' >Login</button>
                    </form>
                    <p className='text-center'>Don't have an acoount?<Link to="/register">Create an Account</Link></p>
